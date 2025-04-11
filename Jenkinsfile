@@ -11,14 +11,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                // e.g., sh 'mvn clean install' if it's a Maven project
+                sh 'mvn clean install'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running Tests...'
-                // e.g., sh 'mvn test'
+                sh 'mvn test'
             }
         }
 
