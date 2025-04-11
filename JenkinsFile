@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone') {
+            steps {
+                git url: 'https://github.com/ektasengardocuments/LinkedInRemoveConnectionsWithoutDP.git', branch: 'main'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Building...'
+                // e.g., sh 'mvn clean install' if it's a Maven project
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Running Tests...'
+                // e.g., sh 'mvn test'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+                // Add deploy steps if any
+            }
+        }
+    }
+}
