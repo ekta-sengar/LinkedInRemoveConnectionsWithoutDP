@@ -11,6 +11,9 @@ import java.time.Duration;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class HomePage {
 
+    HomePage() {
+
+    }
 
 
 }
